@@ -1,0 +1,49 @@
+
+<div class="container">
+
+  <div class="row myrow" *ngIf='flag'>
+    <div class="col-md-4">
+      <a [routerLink]="['/home/prescriptions']" routerLinkActive="active" class="card" style="width: 18rem;" (click)="sendPres()" >
+        <div class="card-body">
+          <p class="card-text"> Prescriptions</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a routerLink="/home/xrays" routerLinkActive="active" class="card" style="width: 18rem;" (click)="sendXray()">
+          <div class="card-body">
+            <p class="card-text"> Xrays </p>
+          </div>
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a routerLink="/home/mris" routerLinkActive="active" class="card" (click)="sendMri()" style="width: 18rem;">
+          <div class="card-body">
+            <p class="card-text"> MRI's </p>
+          </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row myrow">
+
+      <div class="col-md-4">
+        <a routerLink="/home/usgs" routerLinkActive="active" class="card" (click)="sendUsg()" style="width: 18rem;">
+            <div class="card-body">
+              <p class="card-text"> USG's </p>
+            </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a routerLink="/home/bloodreports" routerLinkActive="active" (click)="sendBloodrep()" class="card" style="width: 18rem;">
+            <div class="card-body">
+              <p class="card-text"> Blood reports</p>
+            </div>
+        </a>
+      </div>
+
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="container" style="background-color:#EAE6DA">
+    <div class="row myrow row-eq-height" *ngFor="let image of images | paginate: { itemsPerPage: 1, currentPage: p }">
+        <div class="col-md-8" > 
+            <app-display [image]='image'></app-display>
+        </div>
+        <div class="col-md-4">
+            <mat-radio-group>
+                <h5><em>Image quality</em></h5>
+                <mat-radio-button (change)="imageQuality($event,image)" value="Very Clear">Very clear</mat-radio-button>
+                <mat-radio-button (change)="imageQuality($event,image)" value="Clear">Clear</mat-radio-button>
+                <mat-radio-button (change)="imageQuality($event,image)" value="Bad">Bad</mat-radio-button>
+                </mat-radio-group>
+                <mat-radio-group>
+                <h5><em>Is a medical Document?</em></h5>
+                <mat-radio-button (change)="isMedical($event)" [checked]=true value="Yes">Yes</mat-radio-button>
+                <mat-radio-button (change)="isMedical($event)" value="No">No</mat-radio-button>
+            </mat-radio-group> 
+
+            <div class="row col">
+                <a type="button" (click)="showForm(image)" style="font-family: 'Times New Roman', Times, serif;color:brown">Digitize Image</a>
+            </div>
+
+            <div *ngIf="hide">
+
+                <form  [formGroup]="presForm" (ngSubmit)="onSubmit(image)">
+                    <mat-form-field  class="mycalender" >
+                        <input matInput required [matDatepicker]="picker" [(ngModel)]="prescriptionDate" formControlName="date" placeholder="Date of prescription">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>  
+                    
+                    <mat-form-field>
+                        <select matNativeControl required>
+                              <option value="volvo" *ngFor=" let doctor of doctors">{{doctor}}</option>
+                        </select>
+                    </mat-form-field>
+    
+                    <mat-form-field class="example-full-width">
+                        <input matInput required  formControlName="problem" placeholder="Problem">
+                    </mat-form-field>
+    
+                    <mat-form-field class="example-full-width">
+                        <textarea matInput required formControlName="medicine" placeholder="Medicine"></textarea>
+                    </mat-form-field>
+                    
+                    <mat-form-field class="mycalender">
+                        <input matInput required [matDatepicker]="picker2" [(ngModel)]='fromDateChange' formControlName="fromDate"  placeholder="Course from date">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+        
+        
+                    <mat-form-field class="mycalender">
+                        <input matInput required [matDatepicker]="picker3" [(ngModel)]='toDateChange' formControlName="toDate"   placeholder="Course to date">
+                        <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                        <mat-datepicker #picker3></mat-datepicker>
+                    </mat-form-field>
+                    <button mat-button type="submit" [disabled]="!presForm.valid" >Submit form</button>
+                    
+                </form>              
+            </div>
+        </div>
+    </div>
+    <pagination-controls class="pagination" (pageChange)="p = $event" (pageChange)="pageChanged($event)"></pagination-controls>
+
+    
+</div>

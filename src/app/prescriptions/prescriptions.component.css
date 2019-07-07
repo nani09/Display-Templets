@@ -1,0 +1,41 @@
+.myrow{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+  }
+
+h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+img{
+    height: auto;
+    width: auto;
+}
+
+ul li{
+    font-size:auto;
+   }
+
+.properties{
+    padding-top: 10px;
+    height:350px;
+    overflow-y: auto;
+}
+
+.pagination /deep/ .ngx-pagination .current {
+    margin-top: 20px;  
+  }
+
+.mycalender,.example-full-width{
+    width: 100%;
+}
+
+.duration {
+    display: inline-block;
+}

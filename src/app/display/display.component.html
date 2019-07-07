@@ -1,0 +1,37 @@
+<div class="row">
+
+    <div class="col-md-8 text-center">
+      <img src="{{image['imageUrl']}}" class="" alt="Responsive image" style="padding-top: 5px">
+    </div>
+    <div class="col-md-4 properties">
+      <h5><em>Properties</em> </h5>
+      <div class="card" style="">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Patient Info
+                <ul>
+                <li>Name: <input type="text" value="{{image['patientInfo']['name']}}"></li>
+                <li>ID: <input type="text" value="{{image['patientInfo']['id']}}"></li>
+                <li>Age: <input type="text" value="{{image['patientInfo']['age']}}"></li>
+                </ul>
+            </li>            
+            <li class="list-group-item">Problem 
+                <ul>
+                <li> <input type="text" value="{{image['problem']}}"> </li>
+               </ul>
+            </li>
+            <li class="list-group-item">Doctor
+                <ul>
+                  <li><input type="text" value="{{image['doctor']}}"></li>
+                </ul>
+            </li>
+            <li class="list-group-item">Date 
+                <ul>
+                <li> <input type="text" value="{{image['doctor']}}"></li>
+                </ul>
+            </li>
+       </ul>
+       <button type="button" class="btn btn-warning" (click)="update(image)">Update</button>
+      </div>
+
+    </div>
+</div>

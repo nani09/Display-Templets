@@ -1,0 +1,141 @@
+{
+    "images" :[{
+        "imageUrl" : "./assets/images/prescription1.jpg",
+        "type":"Prescription",
+        "problem":"problem 1",
+        "patientInfo":{
+            "name":"A",
+            "id":"0001",
+            "age":"01"
+        },
+        "doctor":"A",
+        "date":"dd/mm/yyyy",
+        "formdata":{
+            "date": " ",
+            "doctor": "A",
+            "problem": "fever",
+            "medicine": "dolo",
+            "courseStartDate": "10/11/2019",
+            "courseEndDate": "11/15/2019"
+        }
+    },{
+        "imageUrl" : "./assets/images/prescription2.gif",
+        "type":"Prescription",
+        "problem":"problem 2",
+        "patientInfo":{
+            "name":"B",
+            "id":"0002",
+            "age":"02"
+        },
+        "doctor":"B",
+        "date":"dd/mm/yyyy",
+        "formdata":{
+            "date": "10/8/2019",
+            "doctor": "B",
+            "problem": "weakness",
+            "medicine": "glucose",
+            "courseStartDate": "10/8/2019",
+            "courseEndDate": "12/8/2019"
+        }
+    },{
+        "imageUrl" : "./assets/images/prescription3.jpg",
+        "type":"Prescription",
+        "problem":"problem 3",
+        "patientInfo":{
+            "name":"C",
+            "id":"0003",
+            "age":"03"
+        },
+        "doctor":"C",
+        "date":"dd/mm/yyyy",
+        "formdata":{
+
+        }
+    },{
+        "imageUrl" : "./assets/images/xray1.jpeg",
+        "type":"Xray",
+        "problem":"problem 4",
+        "patientInfo":{
+            "name":"D",
+            "id":"0004",
+            "age":"04"
+        },
+        "doctor":"D",
+        "date":"dd/mm/yyyy",
+        "formdata":{
+
+        }
+    },{
+        "imageUrl" : "./assets/images/xray2.jpeg",
+        "type":"Xray",
+        "problem":"problem 5",
+        "patientInfo":{
+            "name":"E",
+            "id":"0005",
+            "age":"05"
+        },
+        "doctor":"E",
+        "date":"dd/mm/yyyy",
+        "formdata":""
+    },{
+        "imageUrl" : "./assets/images/mri1.jpeg",
+        "type":"MRI",
+        "problem":"problem 6",
+        "patientInfo":{
+            "name":"F",
+            "id":"0006",
+            "age":"06"
+        },
+        "doctor":"F",
+        "date":"dd/mm/yyyy",
+        "formdata":{
+
+        }
+    },
+    {
+        "imageUrl" : "./assets/images/mri2.jpeg",
+        "type":"MRI",
+        "problem":"problem 7",
+        "patientInfo":{
+            "name":"G",
+            "id":"0007",
+            "age":"07"
+        },
+        "doctor":"G",
+        "date":"dd/mm/yyyy",
+        "formdata":{
+
+        }
+    },
+    {
+        "imageUrl" : "./assets/images/bloodreport1.png",
+        "type":"Blood report",
+        "problem":"problem 8",
+        "patientInfo":{
+            "name":"H",
+            "id":"0008",
+            "age":"08"
+        },
+        "doctor":"H",
+        "date":"dd/mm/yyyy",
+        "formdata":{
+
+        }
+    },
+    {
+        "imageUrl" : "./assets/images/usg1.jpeg",
+        "type":"USG",
+  "problem":"problem 9",
+        "patientInfo":{
+            "name":"I",
+            "id":"0009",
+            "age":"09"
+        },
+        "doctor":"I",
+        "date":"dd/mm/yyyy",
+        "formdata":{
+            
+        }
+    }
+    ]
+}
